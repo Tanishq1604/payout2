@@ -3,7 +3,8 @@ const mainRouter = require('./Routes/mainRouter');
 
 const cors = require("cors");
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin:"https://payout2-frontend.vercel.app"));
 app.use(express.json());
 
 
