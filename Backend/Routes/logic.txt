@@ -1,0 +1,13 @@
+
+
+
+1: All the Routing Logic is defined in mainRouter.js File
+2: In  index.js all the routes are structured if we need we can directly define all logic there itself
+    - in index.js all the requets that come from /api/v1 are defined what they need to route to next route
+3: now in mainRouter.js file individual routes are defined like /user or /user/balance etc
+    - Now these /user or /user/balance routes are agian redirected to there individual logic 
+       eg /user route logic is written in userRoute.js.
+4: Similarly all the routes and there individual logic is defined in separate file 
+    - The Routing Structure can be visulized as below
+
+       index.js -------> mainRouter.js ------> /user -------> userRoute.js
